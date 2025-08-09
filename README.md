@@ -2,9 +2,9 @@
 
 ---
 
-# **PPTX Inconsistency Detector**
+# PPTX Inconsistency Detector
 
-## **Overview**
+## Overview
 
 This Python tool uses **Google Gemini 2.5 Flash** to automatically detect factual, numerical, and logical inconsistencies across slides in a PowerPoint presentation.
 It works with any `.pptx` file and identifies issues such as:
@@ -17,7 +17,7 @@ The script processes each slide's text, sends it to the Gemini API, and outputs 
 
 ---
 
-## **Features**
+## Features
 
 * **Multi-slide processing** — reads text from all slides in `.pptx` presentations.
 * **Text-based inconsistency detection** — flags both **numerical** and **logical/textual** contradictions.
@@ -30,22 +30,22 @@ The script processes each slide's text, sends it to the Gemini API, and outputs 
 
 ---
 
-## **Installation & Setup**
+## Installation & Setup
 
-### **1. Clone this repository**
+### 1. Clone this repository
 
 ```bash
 git clone https://github.com/yourusername/pptx-inconsistency-detector.git
 cd pptx-inconsistency-detector
 ```
 
-### **2. Install dependencies**
+### 2. Install dependencies
 
 ```bash
 pip install python-pptx pillow pymupdf requests google-generativeai
 ```
 
-### **3. Set up your Gemini API key**
+### 3. Set up your Gemini API key
 
 Get a free API key here: [Google AI Studio](https://aistudio.google.com/app/apikey)
 
@@ -63,7 +63,7 @@ setx GEMINI_API_KEY "your_api_key_here"
 
 ---
 
-## **Usage**
+## Usage
 
 Run the script with:
 
@@ -88,7 +88,7 @@ Example output:
 
 ---
 
-## **Code Structure**
+## Code Structure
 
 * **`extract_text_from_pptx(file_path)`** — Reads and extracts text from each slide.
 * **`analyze_inconsistencies(slide_texts)`** — Sends the extracted text to Gemini for analysis, asking for structured JSON output.
@@ -97,7 +97,21 @@ Example output:
 ---
 
 
-## **License**
+## Limitations
+Relies on accurate text extraction from .pptx; images with text require OCR (not implemented here).
+
+Output quality depends on the clarity of the slides’ language and Gemini’s interpretation.
+
+Requires internet connection for API calls.
+
+Works only with .pptx files — PDF/image inputs would need preprocessing.
+
+
+---
+
+
+
+## License
 
 This project is licensed under the MIT License.
 
