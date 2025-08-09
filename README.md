@@ -1,5 +1,4 @@
 # Deck-Detective
-Here’s a polished `README.md` you can use for this project based on your code and the problem statement.
 
 ---
 
