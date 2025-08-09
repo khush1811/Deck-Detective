@@ -97,23 +97,6 @@ Example output:
 
 ---
 
-## **Limitations**
-
-* Relies on **accurate text extraction** from `.pptx`; images with text require OCR (not implemented here).
-* Output quality depends on the clarity of the slides’ language and Gemini’s interpretation.
-* Requires internet connection for API calls.
-* Works only with `.pptx` files — PDF/image inputs would need preprocessing.
-
----
-
-## **Future Improvements**
-
-* Add **OCR support** for detecting inconsistencies in image-based slides.
-* Enable **batch processing** of multiple `.pptx` files.
-* Implement **confidence scores** for each detected inconsistency.
-* Improve **JSON parsing** robustness to handle malformed AI responses.
-
----
 
 ## **License**
 
